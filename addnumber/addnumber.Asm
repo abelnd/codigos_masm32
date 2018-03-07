@@ -24,7 +24,7 @@ invoke StdIn,addr num1,10
 ;-----------------------------------------------------------------------
 mov [num1 + eax - 2],0; corta las dos ultimas letras que agrega la libreria stdin que no nos sirve
 invoke atodw,addr num1; convertirmos de texto a numero
-mov ecx,eax; <<== store number in stack
+mov ecx,eax; pasamos el primer numero a ecx
 ;-----------------------------------------------------------------------
 invoke StdOut,addr Msg
 invoke StdIn,addr num1,10
