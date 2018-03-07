@@ -32,9 +32,9 @@ invoke StdIn,addr num1,10
 mov [num1 + eax - 2],0; corta las dos ultimas letras que agrega la libreria stdin que no nos sirve
 invoke atodw,addr num1; convertirmos de texto a numero
 
-add eax,ecx
+add eax,ecx ;suma ambos numeros
 
-invoke dwtoa,eax,addr num1; convertir el número en texto en el buffer num1
+invoke dwtoa,eax,addr num1; convertir el nÃºmero en texto en el buffer num1
 ;-----------------------------------------------------------------------
 invoke StdOut,addr endl 
 invoke StdOut,addr num1
